@@ -19,3 +19,7 @@ $(document).ready(function () {
         });
     });
 });
+$("#button_kijker").click(function(){
+    $("#tekst_kijker").toggleClass("tekst_kijker_minder");
+    $(".tekst_button_kijker").toggleClass("d-none");
+});
