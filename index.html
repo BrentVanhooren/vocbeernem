@@ -12,7 +12,7 @@
 		  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<title>voc beernem</title>
 </head>
-<body class=" bg-light">
+<body class="">
 <header class="container-fluid">
 	<div id="topbalk" class="row minimum_header hoofdkleur1_achtergrond d-flex align-items-center sticky1">
 		<nav id="navigatie_header" class="col-12 p-0 navbar d-md-none navbar-light">
@@ -357,14 +357,14 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link text-center text-white text-uppercase px-3" href="#">kalender</a>
+					<a class="nav-link text-center text-white text-uppercase px-3" href="#kalender">kalender</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 </header>
-<main class="container-fluid hoofdkleur1_achtergrond">
-	<div id="kijker" class="row">
+<main class="container-fluid">
+	<div id="kijker" class="row bg-white">
 		<div class="col-12 col-lg-10 offset-lg-1 my-5">
 			<div class="row">
 				<div class="col-12 col-md-6">
@@ -373,16 +373,16 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<div id="tekst_kijker" class="tekst_kijker_minder">
-						<h2 class="py-5text-center text-uppercase text-white">dier in de kijker: <span>de
+						<h2 class="py-5 text-center text-uppercase">dier in de kijker: <span>de
 							roodborst</span></h2>
-						<p class=" text-white">
+						<p class="">
 							De roodborst of het roodborstje (Erithacus rubecula) is een zangvogel uit de familie
 							Muscicapidae
 							(vliegenvangers). Hij waagt zich dicht bij huizen, vooral 's winters. Verder is het een zeer
 							talrijke
 							broedvogel van grote tuinen, parken en bossen.</p>
-						<h3 class="text-center text-uppercase text-white">Kenmerken</h3>
-						<p class="text-white">Het is een vrij gedrongen vogeltje en zowel mannetjes als vrouwtjes
+						<h3 class="text-center text-uppercase">Kenmerken</h3>
+						<p class="text-secondary">Het is een vrij gedrongen vogeltje en zowel mannetjes als vrouwtjes
 							hebben een opvallende bruinrode tot
 							oranje keel. De staart is roodbruin, de rug bruin en de buik lichtgekleurd. De zang is het
 							hele jaar te
@@ -394,14 +394,14 @@
 							zowel mannetjes
 							als vrouwtjes heel agressief. Zowel in de zomer als in de winter verdedigen zij hun
 							territorium fel.</p>
-						<h3 class="text-center text-uppercase text-white">voedsel</h3>
-						<p class="text-white">Het roodborstje eet voornamelijk op de grond levende insecten (vooral
+						<h3 class="text-center text-uppercase">voedsel</h3>
+						<p class="text-secondary">Het roodborstje eet voornamelijk op de grond levende insecten (vooral
 							kevers) en slakken, wormen en
 							spinnen. Van de herfst tot vroeg in de lente vormen wormen, fruit en bessen een belangrijk
 							deel van zijn
 							dieet.</p>
-						<h3 class="text-center text-uppercase text-white">voortplanting</h3>
-						<p class="text-white">Een legsel bestaat meestal uit vijf tot zes roze eieren met grijze
+						<h3 class="text-center text-uppercase">voortplanting</h3>
+						<p class="text-secondary">Een legsel bestaat meestal uit vijf tot zes roze eieren met grijze
 							ondervlekken en roestbruine
 							vlekjes.</p>
 					</div>
@@ -409,6 +409,148 @@
 					hoofdkleur3_achtergrond">lees
 						<span class="tekst_button_kijker">meer</span>
 						<span class="tekst_button_kijker d-none">minder</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="kalender" class="row hoofdkleur1_achtergrond">
+		<div class="col-12 col-lg-10 offset-lg-1 my-5">
+			<h2 class="text-white text-uppercase text-center mb-5"><i class="far fa-calendar-alt mr-2"></i>kalender</h2>
+			<div class="d-flex justify-content-between">
+				<p class="text-white">alles</p>
+				<p id="december" class="d-none d-md-block text-white">dec '18</p>
+				<p id="januari" class="d-none d-lg-block text-white">jan '19</p>
+				<p id="februari" class="text-white">feb '19</p>
+				<p id="maart" class="d-none d-md-block text-white">maa '19</p>
+				<p id="april" class="d-none d-lg-block text-white">apr '19</p>
+				<p id="mei" class="d-none d-md-block text-white">mei '19</p>
+				<p id="juni" class="text-white">jun 2019</p>
+				<p id="juli" class="d-none d-md-block text-white">jul '19</p>
+				<p id="augustus" class="d-none d-lg-block text-white">aug '19</p>
+				<p id="september" class="d-none d-md-block text-white">sep '19</p>
+				<p id="oktober" class="d-none d-lg-block text-white">okt '19</p>
+				<p id="november" class="text-white">nov '19</p>
+			</div>
+			<input id="range" type="range" name="rangeInput" min="0" step="1" max="1200" value="0"
+				   class="w-100 slider_kalender" onchange="updateTextInput(this.value);">
+			<div>
+				<div class="row">
+					<div class="col-sm-12 col-lg-8">
+						<div class="row">
+							<article class="col-sm-6 my-3">
+								<div class="card december">
+									<img class="card-img-top" src="assets/images/spaghetti.jpg" alt="bord spaghetti">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">spaghetti-avond</h3>
+										<p class="card-text m-0">ma 17 december</p>
+										<p class="card-text m-0">17.30u tot 21.45u</p>
+										<p class="card-text m-0">Middelkerke</p>
+										<p class="card-text">€4 à volonté</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+							<article class="col-sm-6 my-3">
+								<div class="card januari">
+									<img class="card-img-top" src="assets/images/bordspelavond.jpg"
+										 alt="bordspel monopoly">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">bordspelavond</h3>
+										<p class="card-text m-0">do 17 januari</p>
+										<p class="card-text m-0">17.30u tot 21.45u</p>
+										<p class="card-text m-0">Oostende</p>
+										<p class="card-text">€5.00 voor de ganse avond</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="row">
+							<article class="col-lg-12 col-sm-12 my-3">
+								<div class="card februari">
+									<img class="card-img-top" src="assets/images/ontbijtmanden.jpg"
+										 alt="ontbijt op bed">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">valentijn-ontbijtmanden</h3>
+										<p class="card-text m-0">do 14 februari</p>
+										<p class="card-text m-0">inschrijven voor vr 1 februari </p>
+										<p class="card-text m-0">afhalen of levering (+ €7)</p>
+										<p class="card-text">€15 per mand</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-4">
+						<div class="row">
+							<article class="col-lg-12 col-sm-12 my-3">
+								<div class="card augustus">
+									<img class="card-img-top" src="assets/images/opendeurdag.png" alt="opendeurdag">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">opendeurdag</h3>
+										<p class="card-text m-0">vr 30 augustus</p>
+										<p class="card-text m-0">10u tot 18u</p>
+										<p class="card-text m-0">Beernem</p>
+										<p class="card-text">gratis inkom</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-8">
+						<div class="row">
+							<article class="col-sm-6 my-3">
+								<div class="card oktober">
+									<img class="card-img-top" src="assets/images/bevrijden_sessie.jpg"
+										 alt="hert op ijs">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">cursus dieren bevrijden 1</h3>
+										<p class="card-text m-0">za 26 oktober</p>
+										<p class="card-text m-0">14u tot 17.30u</p>
+										<p class="card-text m-0">Beernem</p>
+										<p class="card-text">enkel voor (toekomstige) vrijwilligers</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+							<article class="col-sm-6 my-3">
+								<div class="card oktober">
+									<img class="card-img-top" src="assets/images/bevrijden_sessie.jpg"
+										 alt="hert op ijs">
+									<div class="card-body no_overflow hoogte_kalendertekst">
+										<h3 class="card-title">cursus dieren bevrijden 2</h3>
+										<p class="card-text m-0">zo 27 oktober</p>
+										<p class="card-text m-0">14u tot 17.30u</p>
+										<p class="card-text m-0">Beernem</p>
+										<p class="card-text">enkel voor (toekomstige) vrijwilligers</p>
+									</div>
+									<div class="card-body hoogte_kalenderknoppen">
+										<a href="#" class="float-left btn btn-primary">meer info</a>
+										<a href="#" class="float-right btn btn-primary">inschrijven</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -424,5 +566,6 @@
 		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
 		crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/scroll.js"></script>
 </body>
 </html>
