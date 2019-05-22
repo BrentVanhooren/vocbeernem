@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="info en webshop VOC Beernem">
-	<meta name="keywords" content="opvangcentrum, bulskampveld, nestkast, voederbol, wild dier, vogel, zoogdier,
-	blauwe reiger, konijn, haas, eekhoorn, das, zeekoet, merel, zanglijster, roodborst, kauw, steenmarter...">
+	<meta name="description" content="categorieën van de webshop van VOC Beernem">
+	<meta name="keywords" content="categorieën">
 	<meta name="author" content="Brent Vanhooren">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
 		  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<title>voc beernem</title>
+	<title>pruduct</title>
 </head>
-<body class="">
+<body>
 <header class="header_index container-fluid">
-	<div id="topbalk" class="row minimum_header hoofdkleur1_achtergrond d-flex align-items-center">
+	<div id="topbalk" class="row minimum_header hoofdkleur1_achtergrond d-flex align-items-center sticky1">
 		<nav class="navigatie_header col-12 p-0 navbar d-md-none navbar-light">
 			<div id="navigatie_header" class="row w-100 collapse navbar-collapse">
 				<ul class="col-12 navbar-nav mr-auto">
@@ -107,7 +106,7 @@
 					</li>
 					<li class="nav-item">
 						<a class="w-100 nav-link text-center text-white text-uppercase px-3"
-						   href="#kalender">kalender</a>
+						   href="index.html/#kalender">kalender</a>
 					</li>
 					<li class="nav-item">
 						<a class="w-100 nav-link text-center text-white text-uppercase px-3"
@@ -267,7 +266,7 @@
 				</li>
 				<li class="nav-item">
 					<a class="nav-link text-center text-white text-uppercase px-3"
-					   href="#kalender">kalender</a>
+					   href="index.html/#kalender">kalender</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link text-center text-white text-uppercase px-3" href="login.html">inloggen</a>
@@ -276,265 +275,257 @@
 		</div>
 	</nav>
 </header>
-<main class="container-fluid">
-	<section id="achtergrond_index" class="row position-relative bg-light">
-		<div id="caroussel" class="col-md-10 offset-md-1 carousel slide carousel-fade position-relative" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img class="w-100 kenburns-top-right img-fluid" src="assets/images/achtergrond1.jpg"
-						 alt="achtergrond1">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Deze buizerd werd door ons geholpen. <br>Help jij ons ook?</h2>
-						<button class="btn text-uppercase text-white hoofdkleur3_achtergrond">word lid</button>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="w-100 kenburns-top-right img-fluid" src="assets/images/achtergrond3.jpg"
-						 alt="achtergrond3">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Dit is een krombekstrandloper. <br>De sleutel naar jouw hart?</h2>
-						<button class="btn text-uppercase text-white hoofdkleur3_achtergrond">word vrijwilliger</button>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img class="w-100 kenburns-top-right img-fluid" src="assets/images/achtergrond4.jpg"
-						 alt="achtergrond4">
-					<div class="carousel-caption d-none d-md-block">
-						<h2>Deze waterral begint een tweede leven. <br>Houd jij ons ook mee in leven?</h2>
-						<button class="btn text-uppercase text-white hoofdkleur3_achtergrond">doneer</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<a class="d-none d-md-flex carousel-control-prev position-absolute h-100" href="#caroussel" role="button" data-slide="prev">
-			<span aria-hidden="true"><i class="hoofdkleur2_tekst fas fa-kiwi-bird spiegel_y groot_font"></i></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="d-none d-md-flex carousel-control-next position-absolute h-100" href="#caroussel" role="button" data-slide="next">
-			<span aria-hidden="true"><i class="hoofdkleur2_tekst fas fa-kiwi-bird groot_font"></i></span>
-			<span class="sr-only">Next</span>
-		</a>
+<main class="position-relative">
+	<section id="slidemenu"
+			 class="rounded position-absolute hoofdkleur2_achtergrond d-flex justify-content-center align-items-center">
+		<h2 class="d-none">slidemenu</h2>
+		<i data-toggle="collapse" data-target="#categorie"
+		   class="fas fa-list py-2 py-md-5 px-3 text-white"></i>
+		<ul id="categorie" class="collapse pr-5 no_list_style">
+			<li data-toggle="collapse" data-target="#nestkasten" class="d-block w-100 p-2 text-white groot_font">
+				nestkasten
+			</li>
+			<li id="nestkasten" class="collapse">
+				<ul class="no_list_style">
+					<li class="product d-block w-100 p-2"><a href="producten_category.html"
+															 class="no_text_decoration text-white">zangvogels</a></li>
+					<li class="product d-block w-100 p-2"><a href="producten_category.html"
+															 class="no_text_decoration text-white">roofvogels en uilen</a></li>
+					<li class="product d-block w-100 p-2"><a href="producten_category.html"
+															 class="no_text_decoration text-white">zoogdieren</a></li>
+					<li class="product d-block w-100 p-2"><a href="producten_category.html"
+															 class="no_text_decoration text-white">reptielen</a></li>
+					<li class="product d-block w-100 p-2"><a href="producten_category.html"
+															 class="no_text_decoration text-white">amfibieën</a></li>
+				</ul>
+			</li>
+			<li data-toggle="collapse" data-target="#voederen" class="d-block w-100 p-2 text-white groot_font">
+				voederen
+			</li>
+			<li id="voederen" class="collapse">
+				<ul>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">zaden en vetbollen</a></li>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">voederplanken</a></li>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">voederhuisjes</a></li>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">fonteintjes</a></li>
+				</ul>
+			</li>
+			<li class="d-block w-100 p-2 groot_font"><a href="producten_category.html"
+														class="no_text_decoration text-white">literatuur</a></li>
+			<li class="d-block w-100 p-2 groot_font"><a href="producten_category.html"
+														class="no_text_decoration text-white">accessoires</a></li>
+			<li data-toggle="collapse" data-target="#dierafweer" class="d-block w-100 p-2 text-white groot_font">
+				dierafweer
+			</li>
+			<li id="dierafweer" class="collapse">
+				<ul>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">marters</a></li>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">schouwbroeders</a></li>
+					<li class="d-block w-100 p-2"><a href="producten_category.html"
+													 class="no_text_decoration text-white">venstervliegers</a></li>
+				</ul>
+			</li>
+			<li class="d-block w-100 p-2 groot_font"><a href="producten_category.html"
+														class="no_text_decoration text-white">verrekijkers</a></li>
+		</ul>
 	</section>
-	<section id="kijker" class="row bg-light">
-		<div class="col-12 col-lg-10 offset-lg-1 my-5">
-			<div class="row">
-				<div class="col-12 col-md-6">
-					<img class="img-fluid w-100 rounded" src="assets/images/roodborst.jpg"
-						 alt="roodborst, robin, rouge-gorge, Erithacus rubecula">
+	<div class="container">
+		<section id="zoekbalk_webshop" class="row">
+			<h2 class="d-none">zoekbalk webshop</h2>
+			<div class="input-group col-12 col-md-6 offset-md-3 my-4">
+				<div class="input-group-prepend">
+					<span class="input-group-text"><i class="d-inline fas fa-microscope"></i></span>
 				</div>
-				<div class="col-12 col-md-6">
-					<div id="tekst_kijker" class="tekst_kijker_minder">
-						<h2 class="py-5 text-center text-uppercase">dier in de kijker: <span>de
-							roodborst</span></h2>
-						<p class="">
-							De roodborst of het roodborstje (Erithacus rubecula) is een zangvogel uit de familie
-							Muscicapidae
-							(vliegenvangers). Hij waagt zich dicht bij huizen, vooral 's winters. Verder is het een zeer
-							talrijke
-							broedvogel van grote tuinen, parken en bossen.</p>
-						<h3 class="text-center text-uppercase">Kenmerken</h3>
-						<p class="text-secondary">Het is een vrij gedrongen vogeltje en zowel mannetjes als vrouwtjes
-							hebben een opvallende bruinrode tot
-							oranje keel. De staart is roodbruin, de rug bruin en de buik lichtgekleurd. De zang is het
-							hele jaar te
-							horen. Hij begint 's ochtends te zingen als het nog donker is. Bij gevaar stoot hij de kreet
-							'tsik' uit.
-							Een bijzonderheid van de roodborst is dat ook de vrouwtjes zingen, vooral in de herfst.
-							Jonge vogels
-							hebben een gespikkelde kop en borst. Het vogeltje is 14 cm lang. Tegen soortgenoten zijn
-							zowel mannetjes
-							als vrouwtjes heel agressief. Zowel in de zomer als in de winter verdedigen zij hun
-							territorium fel.</p>
-						<h3 class="text-center text-uppercase">voedsel</h3>
-						<p class="text-secondary">Het roodborstje eet voornamelijk op de grond levende insecten (vooral
-							kevers) en slakken, wormen en
-							spinnen. Van de herfst tot vroeg in de lente vormen wormen, fruit en bessen een belangrijk
-							deel van zijn
-							dieet.</p>
-						<h3 class="text-center text-uppercase">voortplanting</h3>
-						<p class="text-secondary">Een legsel bestaat meestal uit vijf tot zes roze eieren met grijze
-							ondervlekken en roestbruine
-							vlekjes.</p>
+				<input type="text" class="form-control rounded d-inline" placeholder="zoeken" aria-label="zoeken">
+			</div>
+		</section>
+		<section id="webshop_hoofding" class="row mb-3">
+			<h2 class="d-none">webshop hoofding</h2>
+			<div class="col-12 pr-0 mb-3">
+				<a class="float-right btn hoofdkleur3_achtergrond btn-primary border-0" href="checkout.html">
+					<i class="d-inline fas fa-box-open text-white"></i>
+					<p class="d-inline text-white">3 item(s) - €88,50</p>
+				</a>
+			</div>
+			<ol class="breadcrumb m-0 col-12 d-flex align-items-center webshop_hoofding">
+				<li class="breadcrumb-item d-flex align-items-center d-inline-block"><a href="producten_category.html">dierafweer</a>
+				</li>
+				<li class="breadcrumb-item d-flex align-items-center d-inline-block"><a href="producten_category.html">marters</a>
+				</li>
+				<li class="breadcrumb-item d-flex align-items-center d-inline-block">ultrasoon steenmartertoestel</li>
+				<li class="ml-auto nav-item dropdown d-inline-block border-left pl-2 border-secondary">
+					<a class="nav-link dropdown-toggle no_text_decoration text-black-50 py-0" href="#"
+					   id="taalkeuze" data-toggle="dropdown"
+					   aria-haspopup="true" aria-expanded="false">
+						<span class="d-none d-sm-inline-block">Nederlands</span>
+						<span class="d-sm-none">NL</span>
+					</a>
+					<div class="dropdown-menu" aria-labelledby="taalkeuze">
+						<a class="dropdown-item" href="#">English</a>
+						<a class="dropdown-item" href="#">Français</a>
+						<a class="dropdown-item" href="#">Deutsch</a>
 					</div>
-					<button id="button_kijker" class="d-block mt-2 mx-auto text-white text-center text-uppercase btn
-					hoofdkleur3_achtergrond">lees
-						<span class="tekst_button_kijker">meer</span>
-						<span class="tekst_button_kijker d-none">minder</span></button>
+				</li>
+				<li class="nav-item dropdown d-inline-block">
+					<a class="nav-link dropdown-toggle no_text_decoration text-black-50 py-0" href="#"
+					   id="valutakeuze" data-toggle="dropdown"
+					   aria-haspopup="true" aria-expanded="false">
+						Euro
+					</a>
+					<div class="dropdown-menu" aria-labelledby="valutakeuze">
+						<a class="dropdown-item" href="#">US Dollar</a>
+						<a class="dropdown-item" href="#">IR Rial</a>
+						<a class="dropdown-item" href="#">SU Frank</a>
+					</div>
+				</li>
+			</ol>
+		</section>
+		<section id="producten" class="row mb-5">
+			<div class="col-12 d-flex justify-content-md-end order-1 order-lg-0 pr-md-0 align-items-center">
+				<button class="hoofdkleur3_achtergrond btn btn-primary border-0 mx-auto mx-md-0 mb-3">
+					<span class="text-white d-inline pr-2">Toevoegen aan winkelmand</span>
+					<i class="d-inline fas fa-plus text-white"></i>
+				</button>
+			</div>
+			<div class="col-12 col-md-5 order-0 order-md-1">
+				<img class="img-fluid" src="assets/images/marter_ultrasoon.jpg" alt="ultrasoon toestel tegen marters">
+			</div>
+			<div class="col-12 col-md-7 order-2 order-md-2">
+				<h3>ultrasoon martertoestel</h3>
+				<h4>€30,00</h4>
+				<div class="border-top border-bottom py-2 pl-3 mb-3 bg-light">
+					<div class="d-inline pr-4">
+						<i id="ster_1" class="rating_1 rating_2 rating_3 rating_4 rating_5 fas fa-star"></i>
+						<i id="ster_2" class="rating_2 rating_3 rating_4 rating_5 fas fa-star"></i>
+						<i id="ster_3" class="rating_3 rating_4 rating_5 fas fa-star"></i>
+						<i id="ster_4" class="rating_4 rating_5 fas fa-star"></i>
+						<i id="ster_5" class="rating_5 fas fa-star"></i>
+					</div>
+					<a class="no_text_decoration" href=""><p class="d-inline pr-4 border-right text-secondary">2
+						review(s)</p></a>
+					<a class="no_text_decoration" href=""><p class="d-inline text-secondary">Add Your Review</p></a>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section id="kalender" class="row bg-white">
-		<div class="col-12 col-lg-10 offset-lg-1 my-5">
-			<h2 class="text-uppercase text-center mb-5"><i class="far fa-calendar-alt mr-2"></i>kalender</h2>
-			<div class="d-flex justify-content-between">
-				<p class="">alles</p>
-				<p id="december" class="d-none d-md-block">dec '18<span class="badge rounded-circle ml-2 badge-primary">1</span>
+				<p class="text-secondary mb-2"><span class="text-uppercase text-normal">Beschikbaarheid: </span>in stock
 				</p>
-				<p id="januari" class="d-none d-lg-block">jan '19<span
-						class="badge rounded-circle ml-2 badge-primary">1</span></p>
-				<p id="februari" class="e">feb '19<span class="badge rounded-circle ml-2 badge-primary">1</span></p>
-				<p id="maart" class="d-none d-md-block">maa '19</p>
-				<p id="april" class="d-none d-lg-block">apr '19</p>
-				<p id="mei" class="d-none d-md-block">mei '19</p>
-				<p id="juni" class="">jun '19</p>
-				<p id="juli" class="d-none d-md-block">jul '19</p>
-				<p id="augustus" class="d-none d-lg-block">aug '19<span class="badge rounded-circle ml-2 badge-primary">1</span>
+				<p class="text-secondary mb-2"><span class="text-uppercase text-normal">product code: </span>12349876
 				</p>
-				<p id="september" class="d-none d-md-block">sep '19</p>
-				<p id="oktober" class="d-none d-lg-block">okt '19<span
-						class="badge rounded-circle ml-2 badge-primary">2</span></p>
-				<p id="november" class="">nov '19</p>
-			</div>
-			<input id="range" type="range" name="rangeInput" min="0" step="1" max="1200" value="0"
-				   class="w-100 slider_kalender" onchange="updateTextInput(this.value);">
-			<p class="groot_font">januari</p>
-			<div>
+				<p class="text-secondary mb-2 mb-sm-1"><span class="text-uppercase text-normal">merk: </span>Stop&Go</p>
 				<div class="row">
-					<div class="col-sm-12 col-lg-8">
-						<div class="row">
-							<article class="col-sm-6 my-3">
-								<div class="card december rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/spaghetti.jpg"
-										 alt="bord spaghetti">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">spaghetti-avond</h3>
-										<p class="card-text m-0 text-center">ma 17 december</p>
-										<p class="card-text card-info1 text-center m-0 d-none">17.30u tot 21.45u</p>
-										<p class="card-text card-info1 text-center m-0 d-none">Middelkerke</p>
-										<p class="card-text card-info1 text-center d-none">€4 à volonté</p>
-									</div>
-									<div class="card-body d-flex justify-content-around align-items-center">
-										<button id="card1" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
-									</div>
-								</div>
-							</article>
-							<article class="col-sm-6 my-3">
-								<div class="card januari rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/bordspelavond.jpg"
-										 alt="bordspel monopoly">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">bordspelavond</h3>
-										<p class="card-text m-0 text-center">do 17 januari</p>
-										<p class="card-text card-info2 text-center m-0 d-none">17.30u tot 21.45u</p>
-										<p class="card-text card-info2 text-center m-0 d-none">Oostende</p>
-										<p class="card-text card-info2 text-center d-none">€5.00 voor de ganse avond</p>
-									</div>
-									<div class="card-body d-flex justify-content-around align-items-center">
-										<button id="card2" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
-									</div>
-								</div>
-							</article>
+					<div class="col-12 col-sm-6 d-flex align-items-center">
+						<p class="d-inline-block m-0 mr-3 text-uppercase">kleur: </p>
+						<button class="border-0 d-inline-block mr-2 artikel_kleur hoofdkleur1_achtergrond"></button>
+						<button class="border-0 d-inline-block mr-2 artikel_kleur hoofdkleur2_achtergrond"></button>
+						<button class="border-0 d-inline-block mr-2 artikel_kleur hoofdkleur3_achtergrond"></button>
+					</div>
+					<div class="col-12 col-sm-6 d-flex align-items-center mt-2 mt-sm-0 pr-2">
+						<p class="d-inline-block m-0 mr-3 text-uppercase">grootte: </p>
+						<div class="input-group">
+							<select class="custom-select" id="inputkeuzeGrootte">
+								<option value="1">10W</option>
+								<option selected value="2">50W</option>
+								<option value="3">200W</option>
+							</select>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
-						<div class="row">
-							<article class="col-lg-12 col-sm-12 my-3">
-								<div class="card februari rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/ontbijtmanden.jpg"
-										 alt="ontbijt op bed">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">valentijn-ontbijtmanden</h3>
-										<p class="card-text m-0 text-center">do 14 februari</p>
-										<p class="card-text card-info3 text-center m-0 d-none">inschrijven voor vr 1
-											februari </p>
-										<p class="card-text card-info3 text-center m-0 d-none">afhalen of levering (+
-											€7)</p>
-										<p class="card-text card-info3 text-center d-none">€15 per mand</p>
-									</div>
-									<div class="card-body d-flex justify-content-around align-items-center">
-										<button id="card3" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
+				</div>
+				<div class="accordion my-4" id="artikelen_info">
+					<div class="card border-0">
+						<div class="card-header py-0 px-3 bg-light" id="beschrijving">
+							<div class="row">
+								<div class="col-12">
+									<h5 class="text-uppercase float-left my-2">beschrijving</h5>
+									<div class="float-right no_overflow my-2" style="width:18px; height:20px;">
+										<a id="plus1" class="show" data-toggle="collapse"
+										   data-target="#min1,#plus1,#beschrijving_extra" href=""><i
+												class="text-normal fas fa-plus" aria-expanded="true"
+												aria-controls="beschrijving_extra" role="img"></i></a>
+										<a id="min1" class="collapse" data-toggle="collapse"
+										   data-target="#plus1,#min1,#beschrijving_extra" href=""><i
+												class="text-normal fas fa-minus" aria-expanded="true"
+												aria-controls="beschrijving_extra" role="img"></i></a>
 									</div>
 								</div>
-							</article>
+							</div>
+						</div>
+						<div id="beschrijving_extra" class="collapse bg-white" aria-labelledby="beschrijving_extra"
+							 data-parent="#artikelen_info">
+							<div class="card-body p-0">
+								<p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut
+									autem
+									dolor
+									doloremque dolorum earum enim esse, explicabo fuga illo incidunt itaque molestias
+									mollitia perferendis porro quasi quisquam soluta, unde.</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-lg-4">
-						<div class="row h-100">
-							<article class="col-lg-12 col-sm-12 my-3">
-								<div class="card augustus rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/opendeurdag.jpg"
-										 alt="opendeurdag">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">opendeurdag</h3>
-										<p class="card-text m-0 text-center">vr 30 augustus</p>
-										<p class="card-text card-info4 text-center m-0 d-none">10u tot 18u</p>
-										<p class="card-text card-info4 text-center m-0 d-none">Beernem</p>
-										<p class="card-text card-info4 text-center d-none">gratis inkom</p>
-									</div>
-									<div class="card-body d-flex justify-content-around align-items-center">
-										<button id="card4" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
+					<div class="card border-0">
+						<div class="card-header py-0 px-3 bg-light" id="details">
+							<div class="row">
+								<div class="col-12">
+									<h5 class="text-uppercase float-left my-2">details</h5>
+									<div class="float-right no_overflow my-2" style="width:18px; height:20px;">
+										<a id="plus2" class="show" data-toggle="collapse"
+										   data-target="#min2,#plus2,#details_extra" href=""><i
+												class="text-normal fas fa-plus" aria-expanded="true"
+												aria-controls="details_extra" role="img"></i></a>
+										<a id="min2" class="collapse" data-toggle="collapse"
+										   data-target="#plus2,#min2,#details_extra" href=""><i
+												class="text-normal fas fa-minus" aria-expanded="true"
+												aria-controls="details_extra" role="img"></i></a>
 									</div>
 								</div>
-							</article>
+							</div>
+						</div>
+						<div id="details_extra" class="collapse bg-white" aria-labelledby="details_extra"
+							 data-parent="#artikelen_info">
+							<div class="card-body p-0">
+								<p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut
+									autem
+									dolor
+									doloremque dolorum earum enim esse, explicabo fuga illo incidunt itaque molestias
+									mollitia perferendis porro quasi quisquam soluta, unde.</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-sm-12 col-lg-8">
-						<div class="row">
-							<article class="col-sm-6 my-3">
-								<div class="card oktober rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/bevrijden_sessie.jpg"
-										 alt="hert op ijs">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">cursus dieren bevrijden 1</h3>
-										<p class="card-text m-0 text-center">za 26 oktober</p>
-										<p class="card-text card-info5 text-center m-0 d-none">14u tot 17.30u</p>
-										<p class="card-text card-info5 text-center m-0 d-none">Beernem</p>
-										<p class="card-text card-info5 text-center d-none">enkel voor (toekomstige)
-											vrijwilligers</p>
-									</div>
-									<div class="card-body hoogte_kalenderknoppen d-flex justify-content-around align-items-center">
-										<button id="card5" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
+					<div class="card border-0">
+						<div class="card-header py-0 px-3 bg-light" id="comments">
+							<div class="row">
+								<div class="col-12">
+									<h5 class="text-uppercase float-left my-2">comments</h5>
+									<div class="float-right no_overflow my-2" style="width:18px; height:20px;">
+										<a id="plus3" class="show" data-toggle="collapse"
+										   data-target="#min3,#plus3,#comments_extra" href=""><i
+												class="text-normal fas fa-plus" aria-expanded="true"
+												aria-controls="comments_extra" role="img"></i></a>
+										<a id="min3" class="collapse" data-toggle="collapse"
+										   data-target="#plus3,#min3,#comments_extra" href=""><i
+												class="text-normal fas fa-minus" aria-expanded="true"
+												aria-controls="comments_extra" role="img"></i></a>
 									</div>
 								</div>
-							</article>
-							<article class="col-sm-6 my-3">
-								<div class="card oktober rounded-0 border-0">
-									<img class="card-img-top rounded-0" src="assets/images/bevrijden_sessie.jpg"
-										 alt="hert op ijs">
-									<div class="card-body pb-0">
-										<h3 class="card-title text-center m-0">cursus dieren bevrijden 2</h3>
-										<p class="card-text m-0 text-center">zo 27 oktober</p>
-										<p class="card-text card-info6 text-center m-0 d-none">14u tot 17.30u</p>
-										<p class="card-text card-info6 text-center m-0 d-none">Beernem</p>
-										<p class="card-text card-info6 text-center d-none">enkel voor (toekomstige)
-											vrijwilligers</p>
-									</div>
-									<div class="card-body hoogte_kalenderknoppen d-flex justify-content-around align-items-center">
-										<button id="card6" class="float-left btn text-white hoofdkleur3_achtergrond">
-											<span class="tekst_button_agenda">meer</span>
-											<span class="tekst_button_agenda d-none">minder</span> info
-										</button>
-										<a href="#" class="float-right btn text-white hoofdkleur3_achtergrond">inschrijven</a>
-									</div>
-								</div>
-							</article>
+							</div>
+						</div>
+						<div id="comments_extra" class="collapse bg-white" aria-labelledby="comments_extra"
+							 data-parent="#artikelen_info">
+							<div class="card-body p-0">
+								<p class="px-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut
+									autem
+									dolor
+									doloremque dolorum earum enim esse, explicabo fuga illo incidunt itaque molestias
+									mollitia perferendis porro quasi quisquam soluta, unde.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </main>
 <footer class="container-fluid hoofdkleur1_achtergrond">
 	<div class="row">
@@ -567,7 +558,7 @@
 				<li><a class="d-block no_text_decoration text-white text-center my-2 footer_link" href="">wilde
 					dieren</a></li>
 				<li><a class="d-block no_text_decoration text-white text-center my-2 footer_link" href="">media</a></li>
-				<li><a class="d-block no_text_decoration text-white text-center my-2 footer_link" href="#kalender">kalender</a>
+				<li><a class="d-block no_text_decoration text-white text-center my-2 footer_link" href="">kalender</a>
 				</li>
 			</ul>
 		</div>
@@ -613,7 +604,8 @@
 			</div>
 		</div>
 		<div class="col-12">
-			<p class="text-white font-weight-light pt-2 border-top text-center">copyright &copy; 2019 - all rights reserved</p>
+			<p class="text-white font-weight-light pt-2 border-top text-center">copyright &copy; 2019 - all rights
+				reserved</p>
 		</div>
 	</div>
 </footer>

@@ -1,4 +1,4 @@
-// ALGEMEEN //
+/* ALGEMEEN */
 
 .hoofdkleur1_achtergrond {
   background: #2F4858;
@@ -12,12 +12,28 @@
   background: #34ccff;
 }
 
-.hoofdkleur_tekst {
+.hoofdkleur1_tekst {
   color: #34ccff;
+}
+
+.hoofdkleur2_tekst {
+  color: #2F4858;
+}
+
+.hoofdkleur3_tekst {
+  color: #F26419;
 }
 
 .normaal_font {
   font-size: 1rem;
+}
+
+.groot_font {
+  font-size: 2rem;
+}
+
+.text-normal {
+  color: #000 !important;
 }
 
 .icoon_parent {
@@ -54,16 +70,12 @@
   overflow: hidden;
 }
 
-button {
-  outline: none !important;
+.no_list_style {
+  list-style-type: none;
 }
 
-.sticky1 {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
+button {
+  outline: none !important;
 }
 
 .positie_info {
@@ -76,17 +88,15 @@ a:after {
 
 #scrollUp {
   bottom: 0;
-  right: 40px;
+  right: 20px;
   color: #fff;
   background-color: #34ccff;
   padding: 0 10px;
 }
 
-// HEADER //
-
 header {
-  height: 60.55vw;
-  overflow: hidden;
+
+  /* HEADER INDEX */
 
   #topbalk {
 
@@ -122,9 +132,6 @@ header {
   }
 
   #infobalk {
-    background-color: #fff;
-    opacity: 0.8;
-
     .infobalk_hoogte {
       height: 16vw;
       max-height: 100px;
@@ -157,22 +164,7 @@ header {
     }
   }
 
-  #achtergrond_header {
-    height: auto;
-    z-index: -1;
-    overflow: hidden;
-    top: -10%;
-
-    .carousel-caption {
-      top: 30vw;
-      left: 50vw;
-      width: 50vw;
-    }
-  }
-
-  #navigatie_header {
-    background-color: #F26419;
-    opacity: 0.8;
+  .navigatie_header {
 
     .dropdown-item {
       background-color: #FF8F19;
@@ -193,12 +185,26 @@ header {
       background-color: #F26419;
     }
   }
-  .carousel-control-prev, .carousel-control-next {
-    top: 30vw;
-  }
 }
 
 main {
+  #achtergrond_index {
+    .carousel {
+      z-index: 5;
+    }
+    .carousel-control-prev, .carousel-control-next {
+      width: 11%;
+      z-index: 4;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      color: #000;
+    }
+    .carousel-caption {
+      top: 25%;
+      left: 50%;
+      width: 50%;
+    }
+  }
   #kijker {
     .tekst_kijker_minder {
       height: 300px;
@@ -230,16 +236,93 @@ main {
       background: #F26419;
       cursor: pointer;
     }
-    .card-img-top {
-      height: 36%;
+
+  }
+  #categorie_webshop {
+    article {
+      max-height: 30vw;
     }
-    .card{
-      height:408px;
+    article:hover {
+      opacity: 0.3;
     }
-    .hoogte_kalendertekst{
-      height:50%;
+  }
+  #producten {
+    .volle_ster {
+      color: #F26419;
+    }
+    .artikel_kleur {
+      height: 15px;
+      width: 15px;
+    }
+    button:hover {
+      cursor: pointer;
     }
 
+  }
+  .naar_winkelmand {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
+  }
+  #webshop_hoofding {
+    .dropdown-menu {
+      left: auto;
+      right: 25px;
+    }
+  }
+  #slidemenu {
+    top: 13%;
+    z-index: 1000;
+    left: 0;
+    li:hover{
+      cursor: pointer;
+      li:hover {
+        background-color: #FF8F19 !important;
+      }
+    }
+
+    i:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  .logo {
+    width: 15%;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .footer_link:hover li {
+    cursor: pointer;
+  }
+  .footer_vak_foto {
+    height: 5vw;
+    min-height: 50px;
+    width: 5vw;
+    min-width: 50px;
+    position: relative;
+
+  }
+  .footer_vak_extra {
+    height: 4vw;
+    min-height: 25px;
+    width: 4vw;
+    min-width: 25px;
+    position: relative;
+  }
+  .footer_foto_hor {
+    width: auto;
+    height:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
   }
 }
 
@@ -253,13 +336,9 @@ main {
   .positie_info {
     margin-top: 56px;
   }
-
 }
 
 @include media-breakpoint-up(md) {
-  .sticky1 {
-    position: static;
-  }
 
   .positie_info {
     margin-top: 0;
@@ -307,10 +386,18 @@ main {
       }
     }
   }
+  main {
+    #categorie_webshop {
+      article {
+        max-height: 10vw;
+      }
+    }
+
+  }
+
 }
 
 @include media-breakpoint-up(lg) {
-
   header {
     #achtergrond_header {
       top: -130%;

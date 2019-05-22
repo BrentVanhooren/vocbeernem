@@ -4,7 +4,7 @@ $(document).ready(function () {
             scrollName: 'scrollUp', // Element ID
             scrollDistance: 300, // Distance from top/bottom before showing element (px)
             scrollFrom: 'top', // 'top' or 'bottom'
-            scrollSpeed: 400, // Speed back to top (ms)
+            scrollSpeed: 300, // Speed back to top (ms)
             easingType: 'linear', // Scroll to top easing (see http://easings.net/)
             animation: 'fade', // Fade, slide, none
             animationSpeed: 200, // Animation in speed (ms)
@@ -21,6 +21,30 @@ $(document).ready(function () {
 $("#button_kijker").click(function () {
     $("#tekst_kijker").toggleClass("tekst_kijker_minder");
     $(".tekst_button_kijker").toggleClass("d-none");
+});
+$("#card1").click(function () {
+    $(".card-info1").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
+});
+$("#card2").click(function () {
+    $(".card-info2").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
+});
+$("#card3").click(function () {
+    $(".card-info3").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
+});
+$("#card4").click(function () {
+    $(".card-info4").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
+});
+$("#card5").click(function () {
+    $(".card-info5").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
+});
+$("#card6").click(function () {
+    $(".card-info6").toggleClass("d-none");
+    $(".tekst_button_kalender").toggleClass("d-none");
 });
 
 function updateTextInput() {
@@ -79,3 +103,30 @@ function updateTextInput() {
     }
     document.getElementById('value2').innerHTML = value2;
 };
+
+$("#ster_1").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_1").addClass("volle_ster");
+});
+$("#ster_2").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_2").addClass("volle_ster");
+});
+$("#ster_3").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_3").addClass("volle_ster");
+});
+$("#ster_4").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_4").addClass("volle_ster");
+});
+$("#ster_5").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_5").addClass("volle_ster");
+});
+
+$("#ster_5").click(function () {
+    $(".rating_5").removeClass("volle_ster");
+    $(".rating_5").addClass("volle_ster");
+});
+
